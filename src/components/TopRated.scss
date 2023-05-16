@@ -1,0 +1,59 @@
+.top {
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+   overflow: scroll;
+    height: 75vh;
+
+    .title {
+        color: rgb(255, 225, 0);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .movie-list {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        .movie-poster {
+            width: 50%;
+            margin: auto;
+            img {
+                width: 80%;
+                height: 30vh;
+                border: 2px solid rgb(255, 230, 0);
+                border-radius: 10px;
+            }
+        }
+        .movie-rating {
+            width: 50%;
+            color: white;
+        }
+    }
+    .movie-list:hover {
+        background-color: rgb(59, 59, 59);
+        transition: background-color 0.3s ease;
+    }
+}
+.top::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  
+  .top::-webkit-scrollbar-thumb {
+    background-color: #292929;
+    border-radius: 3px;
+  }
+
+
+@media screen and (max-width : 767px) {
+
+    .movie-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
